@@ -371,9 +371,7 @@ def train():
                      b_placeholder: b_real_image_batch})
 
             if x == batch_size - 1:
-                raw = PIL.open("IMG_1704.JPG")
-                b, g, r = raw.split()
-                im = np.array(PIL.merge("RGB", (r, g, b)).convert("RGB"))
+                im = b_test[x]
                 a_result = ba_gen(im).eval()
                 imwrite("pictures/gen_image" + str(i) + ".png", a_result)
 
