@@ -2,11 +2,11 @@
 Cycle GAN architecture with instance normalization and res nets.
 
 # how to train
-cd to git clone 
+cd to git clone then
 "python train.py"
 
 # how to run pre-trained model
-cd to git clone
+cd to git clone then
 "python quick monet.py"
 
-epochs trained should be 75
+epochs trained value should be 75 🤷
