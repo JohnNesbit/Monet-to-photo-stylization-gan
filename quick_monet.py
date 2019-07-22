@@ -293,7 +293,7 @@ def b_descrim(x):
     return tf.reshape(o18, shape=[1])
 
 
-sess = tf.Session()
+sess = tf.Session(tf.global_variables_initializer())
 saver = tf.train.Saver()
 saver.restore(sess, "models/pretrained_mon" + epoch_num + ".ckpt")
 italy_array = ba_gen(italy_array).eval()
