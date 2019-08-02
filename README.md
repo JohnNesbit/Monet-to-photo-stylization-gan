@@ -10,3 +10,4 @@ cd to git clone then
 "python quick monet.py"
 
 epochs trained value should be 75 🤷
+pretrained model will be out by august 25?
